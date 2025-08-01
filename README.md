@@ -21,7 +21,7 @@ By providing information on ethical and social implications, MIND AI aims to fos
 ## Installation
 
 To run or contribute to this project locally:
-git clone https://github.com/yourusername/mind-ai.git
+git clone https://github.com/Adean2/mind-ai.git
 cd mind-ai
 npm install
 npm run dev
