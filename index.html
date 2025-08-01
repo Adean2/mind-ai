@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="explore.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>MIND AI</title>
+  </head>
+  <body>
+    <canvas class="webgl"></canvas>
+    <canvas class="webgl1" id="scene2"></canvas>
+    <script type="module" src="explore.js"></script>
+    <section class="section">
+      <div class="back" id="home_blur">
+        <nav id="navbar">
+          <a class="nav-link" href="index.html">Explore</a>
+          <a class="nav-link" href="resource.html">Resource</a>
+          <a class="nav-link" href="about.html">About</a>
+        </nav>
+        <div class="question_box">
+          <a href="#" onclick="toggle()" class="quest">?</a>
+        </div>
+        <div id="object" class="hidden">
+          <img id="modelImage" src="" />
+          <h2 id="modelName"></h2>
+          <p id="modelDescription"></p>
+          <a id="modelurl" href=""></a>
+        </div>
+      </div>
+      <div id="popup">
+        <h2 class="poph2">Welcome to Mind AI!</h2>
+        <div id="demo">
+          <div class="col1">
+            <h2 class="controls">Page Content</h2>
+            <p class="content">
+              Welcome to the Explore page, featuring an interactive 3D AI brain!
+              The AI brain is divided into 10 parts, each corresponding to a key
+              function and vital area of the human brain. Take a closer look at
+              each brain part to learn how AI will possibly impact important
+              economic industries.
+            </p>
+            <h2 class="controls">Controls</h2>
+            <p class="content">
+              Interact with the AI brain!
+              <li>click and drag to revolve</li>
+              <li>scroll to zoom</li>
+              <li>hover over part for description</li>
+              <li>double click to explore new page</li>
+            </p>
+          </div>
+          <div class="col2">
+            <iframe
+              id="intro_video"
+              src="9a449ce3266f452da9822f0b96855cbd_540.mp4"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <a href="#" onclick="toggle()" class="close">Close</a>
+      </div>
+    </section>
+    <script type="text/javascript">
+      function toggle() {
+        var blur = document.getElementById("home_blur");
+        blur.classList.toggle("active");
+        var popup = document.getElementById("popup");
+        popup.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
