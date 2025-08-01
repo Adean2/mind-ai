@@ -1,4 +1,4 @@
-import "./explore.css";
+import './explore.css';
 import * as THREE from "three";
 import { gsap } from "gsap";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
